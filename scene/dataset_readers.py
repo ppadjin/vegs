@@ -263,7 +263,7 @@ def readKITTI360Cameras(path, seq, start_frame=None, end_frame=None, preload_ima
 
             # Load image
             image_name = f'{str(int(frame)).zfill(10)}.png'
-            image_path = os.path.join(path, "data_2d_raw", seq, f"image_{str(cam_idx).zfill(2)}", "data_rect", image_name)
+            image_path = os.path.join(path, "data_2d_raw", seq, f"image_{str(cam_idx).zfill(2)}", "data_rgb", image_name)
             if preload_image:
                 image = Image.open(image_path)
             else:
